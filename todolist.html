@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="todolist.css">
+    <script src='todolist.js' async></script>
+</head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <script src='todolist.js' async></script>
+    <div class="container" id="all">
+        <div class="haut">
+            <ion-icon class="reset" name="refresh-circle" id="reset"></ion-icon>
+            <span class="date">
+                <SCRIPT LANGUAGE="JavaScript">
+                    var maintenant = new Date();
+                    var jour = maintenant.getDate();
+                    var mois = maintenant.getMonth() + 1;
+                    var an = maintenant.getFullYear();
+                    document.write("Nous sommes le ", jour, "/", mois, "/", an);
+                </SCRIPT>
+            </span>
+
+        </div>
+        <p id="test"></p>
+        <section class="liste" id="taches">
+            <!-- <ul id="liste" class="listen">
+
+
+
+
+            </ul> -->
+
+
+            <!-- <div class="addiv"> -->
+
+            <!-- </div> -->
+
+        </section>
+        <section class="trait">
+            <ion-icon class="add" name="add-circle" id="add"></ion-icon>
+            <input class="input" placeholder=" Add a task" id="in">
+        </section>
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
